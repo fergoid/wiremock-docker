@@ -36,4 +36,12 @@ curl -X:POST "http://localhost:8082/__admin/mappings/reset"
 
 ## Wiremock arguments
 
---proxy-all=some cool API URI --record-mappings
+--proxy-all=some cool API URI --record-mappings  
+--https-keystore  
+--keystore-password  
+--https-truststore  
+--truststore-password  
+--https-port  
+
+
+
