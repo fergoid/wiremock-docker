@@ -3,7 +3,9 @@
 The image runs wiremock standalone and takes three arguments
 1. clone_url = the clone url of the repo that holds your mappings and __files directories
 2. repo_name = the name of your repo
-3. runtime_options = runtime options for Wiremock.  Useful if you want to proxy the real API as well as serving cached responses.  There is no point recording using this image!!
+3. runtime_options = runtime options for Wiremock.  Useful if you want to proxy the real API as well as serving cached responses.  
+
+There is no point recording using this image!!
 
 Don't change the port as the image exposes 8080
 
@@ -22,9 +24,11 @@ docker run -d -p 8084:8080  wiremock-new
 ```
 
 ## Creating an image
-Record your API interactions locally and then create a git repo and commit the mappoings/ and __files/ directories and their contents.
+Record your API interactions locally and then create a git repo and commit the mappings and __files directories and their contents.
 
-Create a readme file that details the services you are virtualising.  It's probably best to create the image with a descriptive tag of the service / API you are virtualising.
+Create a readme file that details the services you are virtualising.  
+
+It's probably best to create the image with a descriptive tag of the service / API you are virtualising.
 
 # Readme - Example
 
